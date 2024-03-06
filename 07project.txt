@@ -1,0 +1,23 @@
+In this project mainly we have understood routing concept that is navigation from one page to another.
+
+Also some methods say one method that is  with code example mentioned here =>
+                          CODE
+import React from 'react'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import { Outlet } from 'react-router-dom'
+
+const Layout = () => {
+  return (
+    <>
+    <Header/>
+    <Outlet/>      
+    <Footer/>
+    </>
+  )
+}
+
+export default Layout
+
+In above code the  "<Outlet/>"    method that is used in most of the project as it defines the methods  above and below will
+be available in each page as per the code header and footer. 
